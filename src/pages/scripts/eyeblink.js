@@ -21,12 +21,7 @@ function setup() {
   imageMode(CENTER);
 
   fft = new p5.FFT(0.8,1024);
-  audio = loadSound(URL.createObjectURL(file), () => {
-
-  audio.loop();
-  amplitude.setInput(audio);
-
-});
+  amplitude = new p5.Amplitude();
 
   const fileInput = document.getElementById("audioFile");
 
@@ -45,6 +40,7 @@ function setup() {
         audio = loadSound(URL.createObjectURL(file), () => {
 
           audio.loop();
+          amplitude.setInput(audio);
 
         });
 
