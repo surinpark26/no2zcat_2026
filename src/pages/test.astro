@@ -1,0 +1,36 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Eye Blink Test</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js" is:inline></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js" is:inline></script>
+
+  </head>
+
+  <body>
+
+    <div id="ascii-ui-box">
+
+      <div class="line">+-----------------------------------------------------------+</div>
+      <div class="line">| EyeBlink_System_v1.0                               [—][X] |</div>
+      <div class="line">+-----------------------------------------------------------+</div>
+
+      <div class="line interactive">
+      | [ SOURCE ] <input type="file" id="audioFile" accept="audio/*"> |
+      </div>
+
+      <div class="line">+-----------------------------------------------------------+</div>
+
+    </div>
+
+    <script src="../scripts/eyeBlink.js"></script>
+
+  </body>
+</html>
