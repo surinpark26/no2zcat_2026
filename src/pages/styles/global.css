@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#ascii-ui-box {
+    position: absolute;
+    z-index: 9999;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    user-select: none;
+}
+
+.line {
+    white-space: pre;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.interactive {
+    pointer-events: auto;
+}
+
+button, 
+input[type="file"]::-webkit-file-upload-button {
+    background: #000;
+    color: inherit;
+    border: 1px solid currentColor;
+    font-family: 'Courier New', monospace;
+    font-size: 11px;
+    padding: 1px 6px;
+    cursor: pointer;
+    margin-left: 5px;
+    text-transform: uppercase;
+}
+
+input[type="file"] {
+    color: inherit;
+    font-size: 11px;
+    width: 220px;
+    background: transparent;
+    border: none;
+}
+
+#ip-val {
+    margin-left: 5px;
+}
